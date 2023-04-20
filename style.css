@@ -13,12 +13,55 @@
       font-weight: 600;
   }
   
+  .change {
+      padding: 50px;
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .change h1 {
+      font-size: 22px;
+      color: white;
+      margin-top: 10px;
+      text-transform: capitalize;
+  }
+  
+  .font .buttonss .btn {
+      padding: 5px 20px;
+      display: inline-flex;
+      cursor: pointer;
+      margin-left: 15px;
+      color: black;
+      background-color: white;
+      border-radius: 5px;
+  }
+  
+  .font .buttonss .btn .btn.active {
+      background: black;
+  }
+  
+  .font .buttonss .btn:nth-child(2) {
+      font-size: 1.5em;
+  }
+  
+  .font .buttonss .btn:nth-child(3) {
+      font-size: 2em;
+  }
+  
   .bottom-right {
       position: absolute;
       bottom: 8px;
       right: 100px;
       color: white;
       font-size: 19px;
+  }
+  
+  .bottom-left span {
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 30px;
   }
   
   .bottom-left {
@@ -33,6 +76,10 @@
       width: 30px;
       white-space: nowrap;
       margin-right: 10px;
+  }
+  
+  .logo a {
+      margin-top: -30px;
   }
   
   footer .logo {
@@ -509,9 +556,45 @@
       }
       .bottom-right {
           position: absolute;
-          bottom: 160px;
+          bottom: -260px;
           left: 40px;
-          z-index: 999;
+          color: black;
+      }
+      .bottom-left {
+          position: absolute;
+          top: 250px;
+          color: black;
+          left: 40px;
+      }
+  }
+  
+  @media screen and (max-width: 600px) {
+      .bottom-right {
+          position: absolute;
+          bottom: -180px;
+          left: 40px;
+          color: black;
+      }
+      .bottom-left {
+          position: absolute;
+          top: 250px;
+          color: black;
+          left: 40px;
+      }
+  }
+  
+  @media screen and (max-width: 400px) {
+      .bottom-left span {
+          background-color: black;
+          color: white;
+          padding: 5px 15px;
+          border-radius: 30px;
+          font-size: 15px;
+      }
+      .bottom-right {
+          position: absolute;
+          bottom: -130px;
+          left: 40px;
           color: black;
       }
       .bottom-left {
@@ -519,5 +602,24 @@
           top: 280px;
           color: black;
           left: 40px;
+      }
+      .item {
+          width: 150px;
+      }
+      .change {
+          display: flex;
+          flex-direction: column;
+      }
+      .buttonss {
+          margin: 10px -5px;
+      }
+  }
+  
+  @media screen and (max-width:330px) {
+      .bottom-right {
+          position: absolute;
+          bottom: -20px;
+          left: 40px;
+          color: black;
       }
   }
