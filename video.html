@@ -20,7 +20,7 @@
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen'></i>
 
-            <span class="logo navLogo"><img src="./assets/media1.png" class="logo"alt="" /><a href="#">MEET</a></span>
+            <span class="logo navLogo"><img src="./assets/media1.png" class="logo" alt="" /><a href="#">MEET</a></span>
 
             <div class="menu">
                 <div class="logo-toggle">
@@ -36,6 +36,7 @@
                         </a>
                     </li>
                     <li><a href="#" id="text">USERNAME</a></li>
+
                 </ul>
 
             </div>
@@ -50,14 +51,16 @@
 
 
             </div>
+
         </div>
         </div>
     </nav>
     <section class="hero">
+
         <div class="hero-container">
             <div class="hero-box-details">
-                <a id="link" href="https://project1-lang.github.io/Round3/"><span>SHARE
-                        : </span>https://project1-lang.github.io/Round3/</a>
+                <a id="link" href="https://nandiness.github.io/round3-team1/"><span>SHARE
+                        : </span>https://nandiness.github.io/round3-team1/</a>
                 <div id="clock">
                     <h4>9:59:45
                     </h4>
@@ -131,10 +134,16 @@
     </section>
     <footer>
         <img src="./assets/media1.png" class="logo" alt="" />
-
+        <a href="" class="send" onclick="whatsapp();">
+            <img src="./assets/whatsapp.png" />
+        </a>
         <h4>MEET. EXPLORE . GROW</h4>
     </footer>
     <script>
+        function whatsapp() {
+            window.open('whatsapp://send?text=Come join the meet, https://nandiness.github.io/round3-team1/')
+        }
+
         function myFunction() {
             const element = document.body;
             element.classList.toggle("dark-mode");
