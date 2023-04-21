@@ -14,15 +14,16 @@
     }
     
     .change {
-        padding: 50px;
+        padding: 30px;
         margin-top: 70px;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
+        flex-direction: column;
     }
     
     .change h1 {
-        font-size: 22px;
+        font-size: 23px;
         color: white;
         margin-top: 10px;
         text-transform: capitalize;
@@ -52,7 +53,7 @@
     
     .bottom-right {
         position: absolute;
-        bottom: 8px;
+        bottom: -200px;
         right: 100px;
         color: white;
         font-size: 19px;
@@ -67,7 +68,7 @@
     
     .bottom-left {
         position: absolute;
-        bottom: 8px;
+        bottom: 50px;
         left: 100px;
         color: white;
         font-size: 19px;
@@ -604,7 +605,7 @@
         }
     }
     
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:1025px) {
         .bottom-right {
             position: absolute;
             bottom: 490px;
@@ -702,8 +703,28 @@
     @media screen and (max-width:380px) {
         .bottom-right {
             position: absolute;
-            bottom: 90px;
+            bottom: 320px;
             left: 40px;
             color: black;
+        }
+    }
+    
+    @media screen and (max-width:330px) {
+        .bottom-right {
+            position: absolute;
+            bottom: 60px;
+            left: 40px;
+            color: black;
+        }
+        #clock {
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            letter-spacing: 3px;
+        }
+        .hero-box-details a {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px;
         }
     }
